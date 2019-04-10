@@ -1,0 +1,11 @@
+EyeAreaImprovements
+PlumpLowerEyelids
+FaceBlush
+MoistenLip
+FaceShadows
+Blush
+Pupil
+EyeShadow
+EyeSparkle
+Lips
+LipsHighlight

@@ -1,0 +1,6 @@
+framework module NSTimerWeakTarget {
+  umbrella header "NSTimer+WeakTarget-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module MLFilterKitGPUImage {
+  umbrella header "MLFilterKit+GPUImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

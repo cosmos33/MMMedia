@@ -1,0 +1,6 @@
+framework module MLGPUImageUtilitiesDeprecated {
+  umbrella header "MLGPUImageUtilitiesDeprecated-umbrella.h"
+
+  export *
+  module * { export * }
+}

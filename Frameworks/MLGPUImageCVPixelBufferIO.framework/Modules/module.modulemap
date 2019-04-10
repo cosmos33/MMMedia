@@ -1,0 +1,6 @@
+framework module MLGPUImageCVPixelBufferIO {
+  umbrella header "MLGPUImageCVPixelBufferIO-umbrella.h"
+
+  export *
+  module * { export * }
+}

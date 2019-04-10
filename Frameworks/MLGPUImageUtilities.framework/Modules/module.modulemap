@@ -1,0 +1,6 @@
+framework module MLGPUImageUtilities {
+  umbrella header "MLGPUImageUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}

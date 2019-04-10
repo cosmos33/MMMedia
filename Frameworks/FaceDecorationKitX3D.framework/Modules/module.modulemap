@@ -1,0 +1,6 @@
+framework module FaceDecorationKitX3D {
+  umbrella header "FaceDecorationKit+X3D-umbrella.h"
+
+  export *
+  module * { export * }
+}
