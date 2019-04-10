@@ -36,5 +36,6 @@ Pod::Spec.new do |s|
   s.dependency 'KVOController'
   s.dependency 'MMCV'
   s.dependency 'MMXEScene'
+  s.dependency 'Mantle'
 
 end
