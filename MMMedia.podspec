@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMMedia'
-  s.version          = '1.0.2_doki'
+  s.version          = '2.0.0'
   s.summary          = 'MMMedia'
 
   s.description      = <<-DESC
