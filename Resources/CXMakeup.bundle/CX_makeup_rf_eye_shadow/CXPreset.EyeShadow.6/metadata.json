@@ -1,0 +1,8 @@
+{
+    "resourceNames": ["eyeshadow.png"],
+    "parameters": {
+        "blendMode": "LightnessLookup",
+        "landmarksType": "Makeup"
+    },
+    "type": "EyesAreaBlend"
+}

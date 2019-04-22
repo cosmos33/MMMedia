@@ -1,0 +1,9 @@
+{
+    "resourceNames": ["1.Overlay.png","2.LinearLight.png","3.Multiply.png","lashes.png"],
+    "parameters": {
+        "blendModes": ["Overlay","LinearLight","Multiply","Normal"],
+        "landmarksType": "Makeup",
+        "blendParameters": [{},{},{},{}]
+    },
+    "type": "EyesAreaBlend"
+}

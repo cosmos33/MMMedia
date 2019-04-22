@@ -1,0 +1,65 @@
+{
+    "list": [
+        {
+            "index": 1, 
+            "name": "", 
+            "spot": "0", 
+            "ios_v": {
+                "max": "", 
+                "min": "1.5"
+            }, 
+            "ext": "{\"needs_segmentation\":true,\"needs_hair_segmentation\":true,\"water_mark\":false,\"has_overlay_filter\":true,\"lan\":{\"en\":{\"name\":\"\",\"describe\":\"\",\"share\":\"\"},\"zh-Hans\":{\"name\":\"\\u6d4b\\u8bd5\",\"describe\":\"\",\"share\":\"\"},\"zh-Hant\":{\"name\":\"\",\"describe\":\"\",\"share\":\"\"}}}", 
+            "version": 1, 
+            "icon_2": "", 
+            "id": "head_finder", 
+            "zipurl": "https://doki.momocdn.com/lib/83/16/8316EDE5-E6D5-795E-D280-8DC810B5758120181120.zip", 
+            "icon": ""
+        }, 
+        {
+            "index": 7, 
+            "name": "", 
+            "spot": "0", 
+            "ios_v": {
+                "max": "", 
+                "min": "0.5"
+            }, 
+            "ext": "{\"graident_colors\":[[82,137,255],[32,81,190]],\"prompt\":\"\",\"needs_depth_data\":true,\"needs_mps\":true,\"video_support\":false,\"pluggins\":[{\"name\":\"bokeh_shape\",\"type\":\"collection\",\"options\":[{\"icon\":\"default@2x.png\",\"texture\":\"polygon\\/diaphragm.jpg\",\"parameters\":{\"swirlyBokeh\":true}}]},{\"name\":\"mode\",\"type\":\"collection\",\"options\":[{\"icon\":\"swirly_icon.png\",\"text\":\"swirly\"},{\"icon\":\"motion_icon.png\",\"text\":\"motion\"},{\"icon\":\"zoom_icon.png\",\"text\":\"zoom\"}]}],\"lan\":{\"en\":{\"name\":\"Background Blur\",\"prompt\":\"Background Blur\"},\"zh-Hans\":{\"name\":\"\\u80cc\\u666f\\u6a21\\u7cca\",\"prompt\":\"\\u80cc\\u666f\\u6a21\\u7cca\"},\"zh-Hant\":{\"name\":\"\\u80cc\\u666f\\u6a21\\u7cca\",\"prompt\":\"\\u80cc\\u666f\\u6a21\\u7cca\"}}}", 
+            "version": 5, 
+            "icon_2": "https://doki.momocdn.com/config/0C/10/0C10EB72-6A2A-DBFA-F834-67FBF8AC7CA020180710_L.png", 
+            "id": "background_blur", 
+            "zipurl": "https://doki.momocdn.com/lib/60/8F/608FEB34-B3CC-A76D-8D2F-D86CFD7ECDBF20181022.zip", 
+            "icon": "https://hani.momocdn.com/app/A1/0D/A10D11C2-0519-0534-C471-B5B2CEC8516920180504.png"
+        }, 
+        {
+            "index": 12, 
+            "name": "", 
+            "spot": "0", 
+            "ios_v": {
+                "max": "", 
+                "min": "0.6"
+            }, 
+            "ext": "{\n    \"graident_colors\": [[44, 181, 112], [29, 141, 85]],\n    \"needs_segmentation\": true,\n    \"pluggins\": [{\n        \"name\": \"scale\",\n        \"type\": \"slider\",\n        \"minimum\": 1.0,\n        \"maximum\": 2.0,\n        \"default\": 1.5\n        }\n    ],\n    \"lan\": {\n        \"en\": {\n            \"name\": \"Big Head\",\n            \"prompt\": \"Point at your friend's face\"\n        },\n        \"zh-Hans\": {\n            \"name\": \"\u5927\u5934\",\n            \"prompt\": \"\u5927\u5934\u7279\u6548: \u5bf9\u7740\u670b\u53cb\u7684\u6b63\u8138\u8bd5\u8bd5\"\n        },\n        \"zh-Hant\": {\n            \"name\": \"\u5927\u982d\",\n            \"prompt\": \"\u5927\u982d\u7279\u6548: \u5c0d\u8457\u670b\u53cb\u7684\u6b63\u81c9\u8a66\u8a66\"\n        }\n    }\n}", 
+            "version": 13, 
+            "icon_2": "https://doki.momocdn.com/config/7D/FE/7DFECE83-ACF3-AD50-B55F-FCF80A25875F20180710_L.png", 
+            "id": "head_enlarge", 
+            "zipurl": "https://doki.momocdn.com/lib/4A/3F/4A3F1CE6-A70F-9F5A-2030-72AF4990924920180530.zip", 
+            "icon": "https://doki.momocdn.com/config/43/90/4390A15C-1978-DDFA-772C-1DD7C4F8C4E620180524_L.png"
+        }, 
+        {
+            "index": 18, 
+            "name": "", 
+            "spot": "0", 
+            "ios_v": {
+                "max": "", 
+                "min": "0.5"
+            }, 
+            "ext": "{\n     \"graident_colors\": [[255, 250, 0], [255, 170, 0]],\n    \"prompt\": \"\",\n    \"lan\": {\n        \"en\": {\n            \"name\": \"Glitter\",\n            \"prompt\": \"Face somewhere bright\"\n        },\n        \"zh-Hans\": {\n            \"name\": \"\u95ea\u95ea\",\n            \"prompt\": \"\u5bf9\u7740\u4eae\u7684\u5730\u65b9\u8bd5\u8bd5\"\n        },\n        \"zh-Hant\": {\n            \"name\": \"\u9583\u9583\",\n            \"prompt\": \"\u5c0d\u8457\u4eae\u7684\u5730\u65b9\u8a66\u8a66\"\n        }\n    }\n}", 
+            "version": 6, 
+            "icon_2": "https://doki.momocdn.com/config/99/D5/99D52F3F-7D2A-BF6A-7F23-4AE909356E7220180704_L.png", 
+            "id": "giltter", 
+            "zipurl": "https://doki.momocdn.com/lib/65/22/6522072B-6448-A41B-0919-5878D615FC9C20180530.zip", 
+            "icon": "https://hani.momocdn.com/app/0A/41/0A41E7BF-8944-4731-B397-192224EF12FA20180504.png"
+        }
+    ], 
+    "type": "specialEffects"
+}

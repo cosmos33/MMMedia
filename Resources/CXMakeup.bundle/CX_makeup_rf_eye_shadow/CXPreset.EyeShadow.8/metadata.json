@@ -1,0 +1,9 @@
+{
+    "resourceNames": ["eyeshadow.png","eyeshadow_overlay.png","eyeshadow_light.png","lashes.png"],
+    "parameters": {
+        "blendModes": ["LightnessLookup","LightnessLookup","Normal","Normal"],
+        "landmarksType": "Makeup",
+        "blendParameters": [{},{"type": "Light"},{},{}]
+    },
+    "type": "EyesAreaBlend"
+}
