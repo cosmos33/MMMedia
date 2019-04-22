@@ -1,0 +1,8 @@
+{
+    "resourceNames": ["blush.png"],
+    "parameters": {
+        "blendMode": "Normal",
+        "landmarksType": "Makeup"
+    },
+    "type": "Blend"
+}

@@ -7,6 +7,7 @@
 //
 
 @import GPUImage;
+@import FaceDecorationKit;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface FDKFaceWarpFilter : GPUImageFilter
+@interface FDKFaceWarpFilter : GPUImageFilter <FDKDecorationFilterUpdating>
+
+@property (nonatomic, strong, nullable) id<FDKFaceWarper> faceWarper;
+
+@property (nonatomic, strong, nullable) FDKDecoration *decoration;
 
 @property (atomic,copy,nullable) FDKFaceWarpData *warpData;
 

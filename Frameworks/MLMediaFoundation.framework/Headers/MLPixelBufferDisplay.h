@@ -24,6 +24,7 @@ FOUNDATION_EXPORT MLPixelBufferDisplayScalingMode MLPixelBufferDisplayScalingMod
 @property (nonatomic) MLPixelBufferDisplayScalingMode scalingMode;
 
 - (BOOL)presentPixelBuffer:(CVPixelBufferRef)pixelBuffer;
+- (void)presentPixelBuffer:(CVPixelBufferRef)pixelBuffer failure:(void(^ _Nullable )(NSError *error))failure;
 
 @end
 

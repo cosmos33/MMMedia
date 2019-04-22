@@ -32,6 +32,8 @@ FOUNDATION_EXPORT MLFilterDataItemType const MLFilterDataItemTypeOrientation;
 
 - (void)updateWithDataItems:(NSArray<MLFilterDataItem *> *)items;
 
+@property(readwrite, nonatomic) float intensity;
+
 @end
 
 NS_ASSUME_NONNULL_END

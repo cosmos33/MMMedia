@@ -21,12 +21,7 @@ FOUNDATION_EXPORT NSArray<NSNumber *> * const CXFaceLipsSamplePointsIndices;
 FOUNDATION_EXPORT NSArray<NSNumber *> * const CXFaceTeethSamplePointsIndices;
 FOUNDATION_EXPORT NSArray<NSNumber *> * const CXFaceEyesSamplePointsIndices;
 
-FOUNDATION_EXPORT NSArray<NSValue *> * CXExtend96PtLandmarksTo104PtLandmarksForSkinSmoothing(NSArray<NSValue *> *landmarks);
-FOUNDATION_EXPORT NSArray<NSValue *> * CXExtend96PtLandmarksTo104PtLandmarksForFaceTextureBlending(NSArray<NSValue *> *landmarks);
+@class MMFaceLandmarks2D;
 
-FOUNDATION_EXPORT CGRect CXFaceTriangulationGetBoundingBoxForTrianglesAtIndexes(NSArray<NSNumber*> *triangleIndices, NSArray<NSValue *> *landmarks) __attribute__((__overloadable__));
-
-FOUNDATION_EXPORT CGRect CXFaceTriangulationGetBoundingBoxForTrianglesAtIndexes(NSIndexSet *triangleIndices, NSArray<NSValue *> *landmarks) __attribute__((__overloadable__));
-
-FOUNDATION_EXPORT CGRect CXFaceTriangulationGetBoundingBoxForLandmarks(NSArray<NSValue *> *landmarks);
+FOUNDATION_EXPORT MMFaceLandmarks2D * CXExtend96PtLandmarksTo104PtLandmarksForSkinSmoothing(MMFaceLandmarks2D *landmarks);
 

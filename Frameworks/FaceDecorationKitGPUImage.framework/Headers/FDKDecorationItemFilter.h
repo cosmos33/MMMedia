@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithItem:(FDKDecorationItem *)item;
 
+- (BOOL)interruptibleSwapItem;
+
 @end
 
 @interface FDKDecorationItemFilter (FDKDecorationFilterUpdating) <FDKDecorationFilterUpdating>

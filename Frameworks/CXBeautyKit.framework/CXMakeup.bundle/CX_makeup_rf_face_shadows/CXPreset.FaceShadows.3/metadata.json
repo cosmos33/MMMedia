@@ -1,0 +1,8 @@
+{
+    "resourceNames": ["lengjiaolian.png"],
+    "parameters": {
+        "blendMode": "Overlay",
+        "landmarksType": "Makeup"
+    },
+    "type": "FaceHighlightShadow"
+}

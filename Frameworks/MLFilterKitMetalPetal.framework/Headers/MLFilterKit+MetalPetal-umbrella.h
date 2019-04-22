@@ -11,6 +11,7 @@
 #endif
 
 #import "MLFilterDescriptor+MetalPetal.h"
+#import "MLMetalPetalConfiguration.h"
 #import "MLMetalPetalNativeViewRenderFilter.h"
 #import "MLMetalPetalSlidingFilter.h"
 #import "MLMetalPetalVideoGiftFilter.h"

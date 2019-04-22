@@ -18,8 +18,6 @@ typedef struct CXSkinColorThreshold CXSkinColorThreshold;
 
 @interface MMFaceFeature (CX)
 
-@property (nonatomic, copy) NSArray<NSValue *> *cxLandmarks104ForFaceTextureBlending;
-
 @property (nonatomic, readonly) CXSkinColorThreshold cxSkinColorThreshold;
 
 @end

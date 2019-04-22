@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CXTextureCoordinates.h"
 
 @import MomoCV;
 @import MetalPetal;
@@ -36,21 +37,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points size:(CGSize)size indices:(NSIndexSet *)indices;
 
-- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points texutres:(const simd_float2 *)textures size:(CGSize)size indices:(NSIndexSet *)indices;
+- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points textureCoordinates:(const simd_float2 *)textures size:(CGSize)size indices:(NSIndexSet *)indices;
 
-- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points texutres:(const simd_float2 *)textures;
+- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points textureCoordinates:(const simd_float2 *)textures;
 
-- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points texutres:(const simd_float2 *)textures indices:(NSIndexSet *)indices;
+- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points texutreCoordinates:(const simd_float2 *)textures indices:(NSIndexSet *)indices;
 
-- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points maskTextures:(const simd_float2 *)maskTextures size:(CGSize)size;
+- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points maskTextureCoordinates:(const simd_float2 *)maskTextures size:(CGSize)size;
 
-- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points maskTextures:(const simd_float2 *)maskTextures size:(CGSize)size indices:(NSIndexSet *)indices;
+- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points maskTextureCoordinates:(const simd_float2 * __nullable)maskTextures size:(CGSize)size indices:(NSIndexSet *)indices;
 
-- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points texutres:(const simd_float2 *)textures maskTextures:(const simd_float2 *)maskTextures size:(CGSize)size indices:(NSIndexSet *)indices;
+- (id<MTIGeometry>)geometryWithPoints:(const simd_float2 *)points textureCoordinates:(const simd_float2 *)textures maskTextureCoordinates:(const simd_float2 *)maskTextures size:(CGSize)size indices:(NSIndexSet *)indices;
 
-- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points texutres:(const simd_float2 *)textures maskTextures:(const simd_float2 *)maskTextures;
+- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points textureCoordinates:(const simd_float2 *)textures maskTextureCoordinates:(const simd_float2 *)maskTextures;
 
-- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points texutres:(const simd_float2 *)textures maskTextures:(const simd_float2 *)maskTextures indices:(NSIndexSet *)indices;
+- (id<MTIGeometry>)geometryWithNormalizedPoints:(const simd_float2 *)points textureCoordinates:(const simd_float2 *)textures maskTextureCoordinates:(const simd_float2 *)maskTextures indices:(NSIndexSet *)indices;
 
 + (CGRect)boundingBoxWithPoints:(const simd_float2 *)points count:(int)count;
 
@@ -77,32 +78,30 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-FOUNDATION_EXTERN NSArray<NSValue *> *getLandmarksFromJsonFileURL(NSURL *jsonURL);
-
 @interface MMFaceLandmarks2D (Triangulation)
 
 - (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation;
 
 - (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation
                              triangleIndices:(NSIndexSet *)indices;
+    
+- (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation
+                          textureCoordinates:(CXTextureCoordinates *)textureCoordinates;
 
 - (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation
-                          textureCoordinates:(NSArray<NSValue *> *)textureCoordinates;
+                      maskTextureCoordinates:(CXTextureCoordinates *)maskTextureCoordinates;
 
 - (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation
-                      maskTextureCoordinates:(NSArray<NSValue *> *)maskTextureCoordinates;
-
-- (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation
-                          textureCoordinates:(NSArray<NSValue *> *)textureCoordinates
+                          textureCoordinates:(CXTextureCoordinates *)textureCoordinates
                              triangleIndices:(NSIndexSet *)indices;
 
 - (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation
-                      maskTextureCoordinates:(NSArray<NSValue *> *)maskTextureCoordinates
+                      maskTextureCoordinates:(CXTextureCoordinates *)maskTextureCoordinates
                              triangleIndices:(NSIndexSet *)indices;
 
 - (id<MTIGeometry>)geometryWithTriangulation:(CXFaceTriangulation *)triangulation
-                      maskTextureCoordinates:(NSArray<NSValue *> *)maskTextureCoordinates
-                          textureCoordinates:(NSArray<NSValue *> *)textureCoordinates
+                      maskTextureCoordinates:(CXTextureCoordinates *)maskTextureCoordinates
+                          textureCoordinates:(CXTextureCoordinates *)textureCoordinates
                              triangleIndices:(NSIndexSet *)indices;
 
 @end
@@ -113,6 +112,12 @@ FOUNDATION_EXTERN NSArray<NSValue *> *getLandmarksFromJsonFileURL(NSURL *jsonURL
 
 // End with number < 0.
 + (instancetype)indexSetWithIndices:(NSInteger)index, ...;
+
+@end
+
+@interface CXFaceTriangulation (Extend)
+
++ (instancetype)triangulation137Extended;
 
 @end
 

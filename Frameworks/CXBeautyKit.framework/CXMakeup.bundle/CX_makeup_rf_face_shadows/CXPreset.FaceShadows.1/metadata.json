@@ -1,0 +1,8 @@
+{
+    "resourceNames": ["changxinglian.png"],
+    "parameters": {
+        "blendMode": "Overlay",
+        "landmarksType": "Makeup"
+    },
+    "type": "FaceHighlightShadow"
+}

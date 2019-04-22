@@ -1,0 +1,8 @@
+{
+    "resourceNames": ["edanlian.png"],
+    "parameters": {
+        "blendMode": "Overlay",
+        "landmarksType": "Makeup"
+    },
+    "type": "FaceHighlightShadow"
+}

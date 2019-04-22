@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDKDecorationEffectItemFilter : GPUImageFilterGroup
+@interface FDKDecorationEffectItemFilter : GPUImageFilterGroup <FDKDecorationFilterUpdating>
 
 - (instancetype)initWithEffectItems:(NSArray<FDKBaseEffectItem *> *)effectItems;
 

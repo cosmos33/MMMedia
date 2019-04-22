@@ -1,0 +1,69 @@
+{
+    "category": "face_shadow",
+    "list": 
+    [
+        {
+            "id": "face_shadow_1",
+            "name": {
+                "en": "Oblong",
+                "zh-Hans": "长型脸",
+                "zh-Hant": "長型臉"
+            },
+            "icon": "face_shadows01@2x.png",
+            "icon_v6": "new_face_shadows01@2x.png",
+            "overlay": [255, 255, 255, 1],
+            "title_color": [100, 100, 100, 1],
+            "layers":[
+                "CXPreset.FaceShadows.1"
+            ]
+        },
+        {
+            "id": "face_shadow_2",
+            "name": {
+                "en": "Oval",
+                "zh-Hans": "鹅蛋脸",
+                "zh-Hant": "鵝蛋臉"
+            },
+            "icon": "face_shadows02@2x.png",
+            "icon_v6": "new_face_shadows02@2x.png",
+            "overlay": [255, 255, 255, 1],
+            "title_color": [100, 100, 100, 1],
+            "layers": 
+            [
+                "CXPreset.FaceShadows.2"
+            ]
+        },
+        {
+            "id": "face_shadow_3",
+            "name": {
+                "en": "Heart",
+                "zh-Hans": "棱角脸",
+                "zh-Hant": "棱角臉"
+            },
+            "icon": "face_shadows03@2x.png",
+            "icon_v6": "new_face_shadows03@2x.png",
+            "overlay": [255, 255, 255, 1],
+            "title_color": [100, 100, 100, 1],
+            "layers": 
+            [
+                "CXPreset.FaceShadows.3"
+            ]
+        },
+        {
+            "id": "face_shadow_4",
+            "name": {
+                "en": "Round",
+                "zh-Hans": "圆形脸",
+                "zh-Hant": "圓形臉"
+            },
+            "icon": "face_shadows04@2x.png",
+            "icon_v6": "new_face_shadows04@2x.png",
+            "overlay": [255, 255, 255, 1],
+            "title_color": [100, 100, 100, 1],
+            "layers": 
+            [
+                "CXPreset.FaceShadows.4"
+            ]
+        }
+    ]
+}

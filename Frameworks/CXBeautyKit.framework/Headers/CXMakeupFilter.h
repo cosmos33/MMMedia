@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, nullable) MTIContext *context;
 
+@property (nonatomic, assign) BOOL disable;
+
 @end
 
 NS_ASSUME_NONNULL_END

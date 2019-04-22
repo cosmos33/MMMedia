@@ -27,6 +27,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+typedef NS_ENUM(NSUInteger, CXSkinSmoothingFilterVersion) {
+    CXSkinSmoothingFilterVersionA = 0,
+    CXSkinSmoothingFilterVersionB = 1,
+    CXSkinSmoothingFilterVersionDefault = CXSkinSmoothingFilterVersionA
+};
+
 @interface CXSkinSmoothingFilter : NSObject <MTIUnaryFilter>
 
 @property (nonatomic) CXFilterInputType inputType;
@@ -35,7 +41,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL processesFaceAreaOnly;
 
-@property (nonatomic, assign) float skinSmoothingFactorWithoutFaces;
+@property (nonatomic) float smoothingAmountForInputWithoutFaces;
+
+@property (nonatomic) float maximumSmoothingAmountForBackground;
+
+@property (nonatomic, class, readwrite) CXSkinSmoothingFilterVersion filterVersion;
 
 @end
 

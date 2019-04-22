@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//FOUNDATION_EXPORT  NSBundle * CXPresetFiltersBundle(void);
+FOUNDATION_EXPORT  NSBundle * CXPresetFiltersBundle(void);
 
-FOUNDATION_EXPORT   NSBundle * _Nullable  CXPresetMakeupsBundle(void);
+FOUNDATION_EXPORT  NSBundle * CXPresetMakeupsBundle(void);
 
 FOUNDATION_EXPORT void CXOverrideCustomMakeupBundle(void);
 FOUNDATION_EXPORT void CXOverrideCustomFilterBundle(void);

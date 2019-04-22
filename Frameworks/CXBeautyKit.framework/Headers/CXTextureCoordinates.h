@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) NSUInteger pointCount;
 
+@property (nonatomic, copy, readonly) NSArray<NSValue *> *pointValues;
+
 + (instancetype)new NS_UNAVAILABLE;
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -23,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithXYXYPoints:(NSArray<NSNumber *> *)points NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)initWithPoints:(NSArray<NSValue *> *)points NS_DESIGNATED_INITIALIZER;
+
+- (nullable instancetype)initWithContentsOfURL:(NSURL *)JSONURL;
 
 @end
 
