@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 @protocol FDKFaceFeature;
 @protocol FDKFacialExpression;
 @protocol FDKObjectFeature;
+@protocol CVSegmentationData;
 @class    MMBodyFeature;
 @class    MMExpression;
 @class    MMHandFeature;
@@ -35,6 +36,8 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 @property (nonatomic,strong) NSArray<id<FDKObjectFeature>> *objectFeatures;
 
 @property (nonatomic,strong) NSArray<MMHandFeature *> *handFeatures;
+
+@property (nonatomic,strong) id<CVSegmentationData> bodySegmentationData;
 
 @end
 
