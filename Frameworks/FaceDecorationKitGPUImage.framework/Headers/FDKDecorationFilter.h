@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithDecoration:(FDKDecoration *)decoration audioPrism:(nullable id<FDKAudioPrism>)audioPrism options:(FDKDecorationFilterOptions *)options;
 
 - (void)updateBeautySettings:(FDKBeautySettings *)beautySettings;
+
+- (void)attachBeautyFinishedFilter:(GPUImageOutput <GPUImageInput>*) attachmentFilter;
 @end
 
 NS_ASSUME_NONNULL_END
