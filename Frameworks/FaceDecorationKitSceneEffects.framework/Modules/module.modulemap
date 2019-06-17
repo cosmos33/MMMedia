@@ -1,0 +1,6 @@
+framework module FaceDecorationKitSceneEffects {
+  umbrella header "FaceDecorationKit+SceneEffects-umbrella.h"
+
+  export *
+  module * { export * }
+}

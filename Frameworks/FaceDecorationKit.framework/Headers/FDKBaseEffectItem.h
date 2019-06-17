@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSDictionary *options;
 @property (nonatomic, copy) NSURL *contentsURL;
 
+- (NSString *)filePathWithName:(NSString *)fileName;
+
 @end
 
 

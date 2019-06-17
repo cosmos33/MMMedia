@@ -155,6 +155,9 @@ FOUNDATION_EXPORT NSString * const FDKDecorationItemResourceTypeAudioVisualizer;
 
 @property (nonatomic, assign) FDKDecorationItemFlipOptions flipOptions;
 
+@property (nonatomic, assign) BOOL pollTrigger;
+@property (nonatomic, assign) NSUInteger groupNum;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 + (instancetype)new NS_UNAVAILABLE;
