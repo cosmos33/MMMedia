@@ -70,6 +70,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger orderedIndex;  // bigger  comes higher
 
+@property (nonatomic, assign) BOOL facialExpressionEnable;
+
 @property (nonatomic, assign) NSUInteger pollGroupNum;
 
 @end
