@@ -31,13 +31,13 @@ Pod::Spec.new do |s|
   s.subspec 'Base' do |sp|
     sp.name = 'Base'
     sp.vendored_frameworks = 'Frameworks/Base/*.framework'
+    sp.dependency 'KVOController'
   end
 
   s.subspec 'Expand' do |sp|
     sp.name = 'Expand'
     sp.vendored_frameworks = 'Frameworks/Expand/*.framework'
     sp.resources = 'Resources/*'
-    sp.dependency 'KVOController'
     sp.dependency 'MMCV'
     sp.dependency 'MMXEScene'
     sp.dependency 'Mantle'
