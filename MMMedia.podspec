@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMMedia'
-  s.version          = '2.1.1'
+  s.version          = '2.1.2'
   s.summary          = 'MMMedia'
 
   s.description      = <<-DESC
@@ -26,16 +26,24 @@ Pod::Spec.new do |s|
   s.weak_frameworks = 'Metal', 'MetalKit'
   s.libraries = 'z', 'c++', 'resolv', 'iconv'
 
-  s.vendored_frameworks = 'Frameworks/**/*.framework'
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => '$(inherited) NO', 'OTHER_LDFLAGS' => '$(inherited) -ObjC', 'MTL_LANGUAGE_REVISION' => 'Metal12'}
 
-  s.resources = 'Resources/*'
+  s.subspec 'Base' do |sp|
+    sp.name = 'Base'
+    sp.vendored_frameworks = 'Frameworks/Base/*.framework'
+  end
+
+  s.subspec 'Expand' do |sp|
+    sp.name = 'Expand'
+    sp.vendored_frameworks = 'Frameworks/Expand/*.framework'
+    sp.resources = 'Resources/*'
+    sp.dependency 'KVOController'
+    sp.dependency 'MMCV'
+    sp.dependency 'MMXEScene'
+    sp.dependency 'Mantle'
+  end
 
   s.dependency 'GPUImage'
   s.dependency 'MetalPetal', '1.1.2'
-  s.dependency 'KVOController'
-  s.dependency 'MMCV'
-  s.dependency 'MMXEScene'
-  s.dependency 'Mantle'
 
 end
