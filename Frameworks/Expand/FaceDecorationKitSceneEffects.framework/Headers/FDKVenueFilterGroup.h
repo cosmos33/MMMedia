@@ -5,7 +5,7 @@
 //  Created by MOMO on 2019/4/18.
 //
 
-#import <GPUImage/GPUImage.h>
+@import GPUImage;
 
 NS_ASSUME_NONNULL_BEGIN
 

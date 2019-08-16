@@ -103,11 +103,7 @@
 #import "FDKScaleFilter.h"
 #import "FDKScanlinesFilter.h"
 #import "FDKScanvibrateFilter.h"
-#import "FDKSceneEffectsUnity.h"
 #import "FDKSecretFilterGroup.h"
-#import "FDKSELookupFilter.h"
-#import "FDKShaderToyFilter.h"
-#import "FDKShaderToyTwoInputFilter.h"
 #import "FDKShadowingFilter.h"
 #import "FDKSlicesFilter.h"
 #import "FDKSolapixFilterGroup.h"
@@ -140,6 +136,10 @@
 #import "FDKWobbleFilter.h"
 #import "FDKXRayFilter.h"
 #import "FDKZoomFilter.h"
+#import "FDKSceneEffectsUnity.h"
+#import "FDKSELookupFilter.h"
+#import "FDKShaderToyFilter.h"
+#import "FDKShaderToyTwoInputFilter.h"
 
 FOUNDATION_EXPORT double FaceDecorationKitSceneEffectsVersionNumber;
 FOUNDATION_EXPORT const unsigned char FaceDecorationKitSceneEffectsVersionString[];

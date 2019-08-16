@@ -5,7 +5,7 @@
 //  Created by MOMO on 2019/4/23.
 //
 
-#import <GPUImage/GPUImage.h>
+@import GPUImage;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FDKFilm3FilterGroup : GPUImageFilterGroup
 
 - (instancetype)initWithImagePath:(NSString *)imagePath;
+
+- (instancetype)initWithImage:(UIImage *)image;
 
 @end
 
