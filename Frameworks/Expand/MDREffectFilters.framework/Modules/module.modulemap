@@ -1,0 +1,6 @@
+framework module MDREffectFilters {
+  umbrella header "MDREffectFilters-umbrella.h"
+
+  export *
+  module * { export * }
+}
