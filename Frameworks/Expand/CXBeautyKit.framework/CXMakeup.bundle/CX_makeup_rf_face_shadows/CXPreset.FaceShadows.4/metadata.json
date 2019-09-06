@@ -1,8 +1,0 @@
-{
-    "resourceNames": ["yuanxinglian.png"],
-    "parameters": {
-        "blendMode": "Overlay",
-        "landmarksType": "Makeup"
-    },
-    "type": "FaceHighlightShadow"
-}
