@@ -74,6 +74,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSUInteger pollGroupNum;
 
+@property (nonatomic, readonly) FDKBeautySettings *originalBeautySetting;
+
 @end
 
 NS_ASSUME_NONNULL_END

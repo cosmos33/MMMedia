@@ -25,6 +25,7 @@
 #import "FDKFacialMaskTriangulation.h"
 #import "FDKFilterEffect.h"
 #import "FDKLandmarksConverter.h"
+#import "FDKPackageValidator.h"
 #import "FDKProtocols.h"
 #import "FDKPVRTexture.h"
 #import "FDKResourceCache.h"
