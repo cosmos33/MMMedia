@@ -40,9 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSArray<CXFaceAdjustmentFilterInputParameter *> *parameters;
 
-@property (nonatomic, strong, readonly, nullable) CXFaceAdjustmentFilterOutput *output;
+@property (nonatomic, strong, readonly) CXFaceAdjustmentFilterOutput *output;
 
-+ (MMFaceFeature *)faceFeatureByAdjustingEyeSize:(MMFaceFeature *)faceFeature eyeSize:(float)eyeSize eyeHeight:(float)eyeHeight;
++ (MMFaceFeature *)faceFeatureByAdjustingEyeSize:(MMFaceFeature *)faceFeature eyeSize:(float)eyeSize;
 
 @end
 

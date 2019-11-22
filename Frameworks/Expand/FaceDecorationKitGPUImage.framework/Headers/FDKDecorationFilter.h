@@ -6,8 +6,8 @@
 //  Copyright © 2016 Momo. All rights reserved.
 //
 
-@import GPUImage;
-@import FaceDecorationKit;
+#import <GPUImage/GPUImage.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 #import "FDKSkinSmoothingFilter.h"
 #import "FDKSkinWhitenFilter.h"
 

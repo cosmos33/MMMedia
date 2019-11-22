@@ -16,13 +16,14 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
     FDKX3DCameraPositionBack,
 };
 
+@class    MMBodyFeature;
+@class    MMExpression;
+@class    MMHandFeature;
+
 @protocol FDKFaceFeature;
 @protocol FDKFacialExpression;
 @protocol FDKObjectFeature;
 @protocol CVSegmentationData;
-@class    MMBodyFeature;
-@class    MMExpression;
-@class    MMHandFeature;
 
 @interface FDKX3DCVInfo : NSObject
 
@@ -38,6 +39,10 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 @property (nonatomic,strong) NSArray<MMHandFeature *> *handFeatures;
 
 @property (nonatomic,strong) id<CVSegmentationData> bodySegmentationData;
+
+@property (nonatomic,copy) NSData *sourceVerticesData;
+
+@property (nonatomic,copy) NSData *destinationVerticesData;
 
 @end
 
@@ -57,23 +62,54 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 
 - (void)endRunEngine;
 
-////////////////////////// Touch Event /////////////////////////
-/* Touch View大小和Render比例不一致时，需根据render大小计算新坐标    */
+/**
+ Touch View大小和Render比例不一致时，需根据render大小计算新坐标
+ */
 - (BOOL)hitTestTouch:(CGPoint)point withView:(UIView *)view;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
 
-////////////       CV  Event      ///////////////
+/**
+ CV Event，图像算法数据派发
+ */
 - (void)updateWithCVInfos:(FDKX3DCVInfo *)CVInfos;
 
-///////////////////////   Message   //////////////////////////////
+/**
+ Weex Message 事件派发
+ */
 - (void)dispatchReceivedMessage:(NSString*)message;
 - (void)registerMessageSendHandle:(FDKX3DMessageSendHandle)sendHandle;
 
+/**
+ Lua 模块加载接口
+ */
+- (void)setupLuaScriptEngine;
+
 - (void)addSearchPath:(NSString *)relationSearchPatch;
 
-- (CGRect)getActorLocationFrame:(NSString *)actorName;
+/**
+ AR 模块接口
+ */
+- (BOOL)ARIsActive;
+
+- (void)activeARSupport:(BOOL)active;
+
+- (id)internalARSessionDelegate;
+
+/**
+ 日志接口
+ */
+- (void)setLogEnable:(BOOL)enable;
+
+- (void)appendTask:(dispatch_block_t)task;
+
+- (void)appendSyncTask:(dispatch_block_t)syncTask;
+
+/**
+ 自定义事件派发
+ */
+- (void)dispatchEvent:(NSString *)event content:(NSString *)content;
 
 @end

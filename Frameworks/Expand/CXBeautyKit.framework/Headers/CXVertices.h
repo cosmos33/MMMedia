@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) NSUInteger vertexCount;
 
+@property (nonatomic, readonly) NSUInteger indexCount;
+
 @property (nonatomic, readonly) MTLPrimitiveType primitiveType;
 
 - (instancetype)init NS_UNAVAILABLE;

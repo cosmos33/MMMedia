@@ -1,7 +1,0 @@
-{
-    "type": "PupilBlend",
-    "resourceNames": ["img.png"],
-    "parameters": {
-        "blendModes": ["Normal"]
-    }
-}

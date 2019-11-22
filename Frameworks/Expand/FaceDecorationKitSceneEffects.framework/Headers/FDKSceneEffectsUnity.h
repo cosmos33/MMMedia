@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 FOUNDATION_EXTERN double se_mod(double x, double mod);
 FOUNDATION_EXTERN float se_smoothstep(float edge0, float edge1, float x);

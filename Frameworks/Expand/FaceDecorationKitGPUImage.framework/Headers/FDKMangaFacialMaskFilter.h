@@ -6,7 +6,7 @@
 //
 
 #import "FDKFacialMaskFilter.h"
-@import FaceDecorationKit;
+#import <FaceDecorationKit/FaceDecorationKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

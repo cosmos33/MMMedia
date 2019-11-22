@@ -6,8 +6,8 @@
 //  Copyright © 2016 wemomo.com. All rights reserved.
 //
 
-@import FaceDecorationKit;
-@import MomoCV;
+#import <FaceDecorationKit/FaceDecorationKit.h>
+#import <MomoCV/MomoCV.h>
 
 @interface MMObjectFeature (FDKObjectFeature) <FDKObjectFeature>
 

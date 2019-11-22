@@ -5,7 +5,7 @@
 //  Created by Bruce on 2018/6/7.
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDKBodyWarpData: NSObject <NSCopying>

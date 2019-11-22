@@ -30,7 +30,6 @@ FOUNDATION_EXPORT CXMakeupLayerType const CXMakeupLayerTypeEyesAreaBlend;
 FOUNDATION_EXPORT CXMakeupLayerType const CXMakeupLayerTypePupilBlend;
 FOUNDATION_EXPORT CXMakeupLayerType const CXMakeupLayerTypeFaceHighlightShadow;
 FOUNDATION_EXPORT CXMakeupLayerType const CXMakeupLayerTypeDefaultFaceBlush;
-FOUNDATION_EXPORT CXMakeupLayerType const CXMakeupLayerTypeHairColor;
 
 @interface CXMakeupLayer: MTLModel
 
@@ -78,7 +77,7 @@ FOUNDATION_EXPORT CXMakeupLayerType const CXMakeupLayerTypeHairColor;
 
 @interface CXMakeup : MTLModel <MTLJSONSerializing>
 
-@property (atomic, copy) NSArray<CXMakeupLayerConfiguration *> *layerConfigurations;
+@property (nonatomic, copy) NSArray<CXMakeupLayerConfiguration *> *layerConfigurations;
 
 - (instancetype)init;
 
