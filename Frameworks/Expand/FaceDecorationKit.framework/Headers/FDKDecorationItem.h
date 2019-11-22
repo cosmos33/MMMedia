@@ -6,7 +6,7 @@
 //
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 #import "FDKTriggerable.h"
 #import "FDKDecorationBlending.h"
 #import "FDKFaceStickerAnimation.h"

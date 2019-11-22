@@ -5,7 +5,7 @@
 //  Created by sunfei on 2018/10/26.
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @class FDKBaseEffectItem;

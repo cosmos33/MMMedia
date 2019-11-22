@@ -6,7 +6,7 @@
 //
 //
 
-@import AVFoundation;
+#import <AVFoundation/AVFoundation.h>
 #import "FDKProtocols.h"
 
 NS_ASSUME_NONNULL_BEGIN

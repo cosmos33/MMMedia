@@ -10,7 +10,6 @@
 #import "CXMakeup.h"
 #import "CXSkinSmoothingSettings.h"
 #import "CXTeethWhitenSettings.h"
-#import "CXAutoLevelInfo.h"
 
 @import Mantle;
 
@@ -18,17 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CXBeautyConfiguration : MTLModel <MTLJSONSerializing>
 
-@property (atomic, copy) CXSkinSmoothingSettings *skinSmoothingSettings;
+@property (nonatomic, copy) CXSkinSmoothingSettings *skinSmoothingSettings;
 
-@property (atomic, copy) CXTeethWhitenSettings *teethWhitenSettings;
+@property (nonatomic, copy) CXTeethWhitenSettings *teethWhitenSettings;
 
-@property (atomic, copy) MMFaceAdjustments *faceAdjustments;
+@property (nonatomic, copy) MMFaceAdjustments *faceAdjustments;
 
-@property (atomic, copy) CXMakeup *makeup;
+@property (nonatomic, copy) CXMakeup *makeup;
 
-@property (atomic) float faceIllumination;
-
-@property (atomic, copy) NSDictionary *metadata;
+@property (nonatomic, copy) NSDictionary *metadata;
 
 - (instancetype)init;
 
@@ -45,3 +42,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
+#import "CXInterpolable.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CXBeautyConfiguration (CXInterpolable) <CXInterpolable>
+
+- (instancetype)interpolateToValue:(id)toValue progress:(double)progress additionalKeyPathes:(NSSet<NSString *> *)additionalKeyPathes NS_SWIFT_NAME(interpolate(to:progress:additionalKeyPathes:));
+
+@end
+
+NS_ASSUME_NONNULL_END

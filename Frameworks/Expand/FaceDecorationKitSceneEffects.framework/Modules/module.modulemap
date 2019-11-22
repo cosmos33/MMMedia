@@ -1,5 +1,5 @@
 framework module FaceDecorationKitSceneEffects {
-  umbrella header "FaceDecorationKit+SceneEffects-umbrella.h"
+  umbrella header "FaceDecorationKitSceneEffects.h"
 
   export *
   module * { export * }

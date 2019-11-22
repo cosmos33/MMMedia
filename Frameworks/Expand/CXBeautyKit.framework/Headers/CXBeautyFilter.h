@@ -27,14 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) MMFaceGender gender;
 
-@property (nonatomic, copy, readonly, nullable) MMHairSeparationColor *hairSeparationColor;
-
-
-
 - (instancetype)init;
 
-- (instancetype)initWithExpressions:(NSArray<MMFacialExpression *> *)expressions gender:(MMFaceGender)gender hairSeparationColor:(nullable MMHairSeparationColor *)hairSeparationColor;
-
+- (instancetype)initWithExpressions:(NSArray<MMFacialExpression *> *)expressions gender:(MMFaceGender)gender;
 
 @end
 
@@ -56,9 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CXBeautyMasks: NSObject <NSCopying>
 
-@property (nonatomic, copy, nullable) MTIImage *hairSegmentationMask; // 检测结果
-
-@property (nonatomic, copy, nullable) MTIImage *hairSeparationMask; //纯色
+@property (nonatomic, copy, nullable) MTIImage *lipsMask;
 
 @end
 
@@ -66,13 +59,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) MTIImage *image;
 
-@property (nonatomic, copy, readonly) NSArray<MMFaceFeature *> *faceFeatures;
-
 @property (nonatomic, readonly) CGRect contentsRect;
 
 @end
 
 @interface CXBeautyFilter : NSObject <MTIUnaryFilter>
+
+@property (nonatomic, assign) BOOL enable;
 
 @property (nonatomic) CXFilterInputType inputType;
 
@@ -86,17 +79,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL skinSmoothingProcessesFaceAreaOnly;
 
-@property (nonatomic) float smoothingAmountForInputWithoutFaces;
-
 @property (nonatomic, strong, nullable) MTIContext *context;
-
-@property (nonatomic, assign) BOOL disable;
 
 + (Class<CXMPSGaussianBlurFallback>)MPSGaussianBlurFallback;
 
 + (void)registerMPSGaussianBlurFallback:(Class<CXMPSGaussianBlurFallback>)cls;
 
 @property (nonatomic, readonly, nullable) CXBeautyFilterOutput *output;
+
+@property (nonatomic, assign) float skinSmoothingFactorWithoutFaces;
 
 @end
 

@@ -17,6 +17,9 @@
 @property (nonatomic, class, readonly) CXTextureCoordinates *meanFaceTextureCoordinatesExtended104ForSkinSmoothing;
 @property (nonatomic, class, readonly) CXTextureCoordinates *makeupFaceTextureCoordinates;
 
++ (id<MTIGeometry>)geometryWithLandmarks:(NSArray <NSValue *> *)landmarks textureCoordinates:(NSArray<NSValue *> *)textureCoordinates renderSize:(CGSize)renderSize;
++ (id<MTIGeometry>)faceGeometryWithMaskLandmarks:(NSArray <NSValue *> *)landmarks maskTextureCoordinates:(NSArray<NSValue *> *)maskTextureCoordinates renderSize:(CGSize)renderSize;
+
 + (MTLRegion)regionForInterestTriangles:(NSArray<NSNumber *> *)indicesOfTrangles withLandmarks:(NSArray <NSValue *> *)landmarks;
 
 + (id<MTIGeometry>)faceGeometryForInterestTriangles:(NSArray<NSNumber *> *)indicesOfTrangles
