@@ -22,6 +22,7 @@
 #import "CXSwirlyBokehFilter.h"
 #import "CXZoomBlurFilter.h"
 #import "CXBeautyConfigurationAdapter.h"
+#import "CXColorAdjustFilter.h"
 #import "CXConfiguration.h"
 #import "CXDelaunayTriangulation.h"
 #import "CXFaceIlluminationDetector.h"

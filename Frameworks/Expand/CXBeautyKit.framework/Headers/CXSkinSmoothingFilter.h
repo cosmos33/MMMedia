@@ -30,10 +30,12 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, CXSkinSmoothingFilterVersion) {
     CXSkinSmoothingFilterVersionA = 0,
     CXSkinSmoothingFilterVersionB = 1,
-    CXSkinSmoothingFilterVersionDefault = CXSkinSmoothingFilterVersionA
+    CXSkinSmoothingFilterVersionDefault = CXSkinSmoothingFilterVersionB
 };
 
 @interface CXSkinSmoothingFilter : NSObject <MTIUnaryFilter>
+
+@property (nonatomic, assign) BOOL disable;
 
 @property (nonatomic) CXFilterInputType inputType;
 
@@ -46,6 +48,8 @@ typedef NS_ENUM(NSUInteger, CXSkinSmoothingFilterVersion) {
 @property (nonatomic) float maximumSmoothingAmountForBackground;
 
 @property (nonatomic, class, readwrite) CXSkinSmoothingFilterVersion filterVersion;
+
+@property (nonatomic, assign) BOOL skinEnhanceEnable;
 
 @end
 

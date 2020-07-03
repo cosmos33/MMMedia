@@ -28,6 +28,7 @@ FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsThinFaceKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsLipThicknessKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsFaceWidthKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsEyeDistanceKey;
+FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsEyeHeightKey;// [-1, 1]
 
 
 typedef NSString *const CXMakeupType NS_STRING_ENUM;
@@ -47,6 +48,7 @@ typedef NS_OPTIONS(NSUInteger, CXBeautyOption){
     CXBeautyOptionSkinWhiten = 1 << 2,
     CXBeautyOptionMakeup = 1 << 3,
     CXBeautyOptionBackgroundBlur = 1 << 4,
+    CXBeautyOptionColorEnhance = 1 << 5,
     CXBeautyOptionAll = NSUIntegerMax,
 };
 
@@ -93,13 +95,17 @@ typedef NS_OPTIONS(NSUInteger, CXBeautyOption){
 
 @end
 
+
 @interface CXBeautyConfigurationAdapter (Makeup)
 
+// makeup
 - (void)addMakeupLayerConfiguration:(CXMakeupLayerConfiguration *)layerConfiguration;
 
-- (void)removeMakeupLayerConfigurationWithLayerIdentifier:(NSString *)layerIdentifier NS_SWIFT_NAME(remove(layerID:));
+// remove method
+- (void)removeMakeupLayerConfigurationWithLayerIdentifier:(NSString *)layerIdentifier NS_SWIFT_NAME(remove(makeupLayerID:));
 
-- (nullable CXMakeupLayerConfiguration *)makeupLayerWithContentsOfFile:(NSURL *)resouceURL  error:(NSError **)error;
+// custom
+- (nullable CXMakeupLayerConfiguration *)makeupLayerWithContentsOfFile:(NSURL *)resourceURL error:(NSError **)error;
 
 @end
 
@@ -118,12 +124,22 @@ typedef NS_OPTIONS(NSUInteger, CXBeautyOption){
 
 @interface CXBeautyConfigurationAdapter (Skin)
 - (void)smoothSkin:(float)amount;
+- (void)smoothSkinCorrection:(BOOL)correctionEnbale;
 
 - (void)whitenSkin:(float)amount;
 
 - (void)whitenTeeth:(float)amount;
+
+- (void)faceIllumination:(float)amount;
 @end
 
+@interface CXBeautyConfigurationAdapter (ColorEnhance)
+- (void)saturation:(float)saturation;
+
+- (void)sharpening:(float)sharpening;
+
+- (void)contrast:(float)contrast;
+@end
 
 
 NS_ASSUME_NONNULL_END
