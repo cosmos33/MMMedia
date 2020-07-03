@@ -42,6 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly, nullable) CXFaceAdjustmentFilterOutput *output;
 
+@property (nonatomic, assign) BOOL disable;
+
 + (MMFaceFeature *)faceFeatureByAdjustingEyeSize:(MMFaceFeature *)faceFeature eyeSize:(float)eyeSize eyeHeight:(float)eyeHeight;
 
 @end
