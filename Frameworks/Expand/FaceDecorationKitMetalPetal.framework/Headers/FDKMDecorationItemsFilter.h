@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "FDKMDecorationItemSource.h"
 #import "FDKMUnaryFilterProtocol.h"
-@import MetalPetal;
-@import FaceDecorationKit;
+#import <MetalPetal/MetalPetal.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDKMDecorationItemsFilter : NSObject<MTIUnaryFilter, FDKDecorationFilterUpdating, FDKMUnaryFilterProtocol>

@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 #import "CXFilterInputType.h"
 NS_ASSUME_NONNULL_BEGIN
 

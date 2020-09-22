@@ -9,7 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "CXBeautyUtility.h"
 #import "CXFilterInputType.h"
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

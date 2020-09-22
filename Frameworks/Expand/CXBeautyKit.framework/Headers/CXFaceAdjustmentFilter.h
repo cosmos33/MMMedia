@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "CXFaceAdjustments.h"
-@import MomoCV;
-@import MetalPetal;
+#import <MomoCV/MomoCV.h>
+#import <MetalPetal/MetalPetal.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

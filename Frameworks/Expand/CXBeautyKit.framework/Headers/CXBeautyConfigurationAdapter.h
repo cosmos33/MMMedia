@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CXBackgroundBlurFilter.h"
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 @class CXBeautyConfiguration,CXMakeupLayerConfiguration, CXBeautyFilterFaceAdditionalInfo, CXBeautyMasks, MMFaceFeature, MMImageSegmentationResult, CXAutoLevelInfo;
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +29,7 @@ FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsLipThicknessKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsFaceWidthKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsEyeDistanceKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsEyeHeightKey;// [-1, 1]
+FOUNDATION_EXPORT CXFaceAdjustmentsKey CXFaceAdjustmentsShortenFaceKey;
 
 
 typedef NSString *const CXMakeupType NS_STRING_ENUM;
@@ -125,6 +126,9 @@ typedef NS_OPTIONS(NSUInteger, CXBeautyOption){
 @interface CXBeautyConfigurationAdapter (Skin)
 - (void)smoothSkin:(float)amount;
 - (void)smoothSkinCorrection:(BOOL)correctionEnbale;
+
+- (void)adjustNasolabialFoldsArea:(float)amount;
+- (void)adjustEyesArea:(float)amount;
 
 - (void)whitenSkin:(float)amount;
 
