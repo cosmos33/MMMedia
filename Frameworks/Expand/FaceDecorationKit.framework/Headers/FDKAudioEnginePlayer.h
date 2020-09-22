@@ -6,7 +6,7 @@
 //
 //
 
-#import <AVFoundation/AVFoundation.h>
+@import AVFoundation;
 #import "FDKAudioPlayerProtocol.h"
 
 #if FDK_USES_AVAUDIOENGINE

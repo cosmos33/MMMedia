@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Mantle/Mantle.h>
+@import Mantle;
 
 @interface FDKFaceStickerAnimationFramePosition : MTLModel <MTLJSONSerializing>
 @property (nonatomic, assign) float  faceX;

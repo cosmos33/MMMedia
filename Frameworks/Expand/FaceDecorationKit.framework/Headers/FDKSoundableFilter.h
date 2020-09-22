@@ -6,7 +6,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 #ifndef FDKSoundableFilter_h
 #define FDKSoundableFilter_h

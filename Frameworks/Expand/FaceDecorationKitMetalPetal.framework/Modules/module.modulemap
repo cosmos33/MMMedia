@@ -1,0 +1,6 @@
+framework module FaceDecorationKitMetalPetal {
+  umbrella header "FaceDecorationKitMetalPetal.h"
+
+  export *
+  module * { export * }
+}

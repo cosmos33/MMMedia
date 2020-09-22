@@ -1,5 +1,5 @@
 framework module FaceDecorationKit {
-  umbrella header "FaceDecorationKit.h"
+  umbrella header "FaceDecorationKit-umbrella.h"
 
   export *
   module * { export * }

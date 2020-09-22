@@ -9,22 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <CoreVideo/CoreVideo.h>
-#import <simd/simd.h>
 #import <UIKit/UIKit.h>
 
 @class FDKBeautySettings,FDKFacialDistortion;
 
 NS_ASSUME_NONNULL_BEGIN
-
-@protocol FDKFaceLandmarks2D <NSObject>
-
-@property (nonatomic, readonly) const simd_float2 *points NS_RETURNS_INNER_POINTER;
-@property (nonatomic, readonly) const simd_float2 *normalizedPoints NS_RETURNS_INNER_POINTER;
-
-@property (nonatomic, copy, readonly) NSArray<NSValue *> *pointValues;
-
-
-@end
 
 @protocol FDKFaceFeature <NSObject>
 
@@ -33,10 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) CGFloat rollAngle;
 
 @property (readonly) CGRect bounds;
-
-@property (readonly) double roll;
-
-- (id<FDKFaceLandmarks2D>)landmarksOfType:(int)type;
 
 @end
 
@@ -64,16 +49,6 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol FDKFacialExpression <NSObject>
 
 @property (nonatomic,readonly) NSUInteger expressionType;
-
-@end
-
-@protocol FDKFacialSegmentationData <NSObject>
-
-@property (readonly,copy) NSData *data;
-
-@property (readonly) size_t width;
-
-@property (readonly) size_t height;
 
 @end
 

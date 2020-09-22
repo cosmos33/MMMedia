@@ -6,7 +6,7 @@
 //
 //
 
-#import <Mantle/Mantle.h>
+@import Mantle;
 #import "FDKTriggerable.h"
 #import "FDKDecorationBlending.h"
 #import "FDKFaceStickerAnimation.h"
@@ -34,7 +34,6 @@ FOUNDATION_EXPORT NSString * const FDKDecorationLayerTypeDefault;
 FOUNDATION_EXPORT NSString * const FDKDecorationLayerTypeObjectFollower;
 FOUNDATION_EXPORT NSString * const FDKDecorationLayerType3D;
 FOUNDATION_EXPORT NSString * const FDKDecorationLayerTypeNative;
-FOUNDATION_EXPORT NSString * const FDKDecorationLayerTypeVideoFile;
 
 FOUNDATION_EXPORT NSString * const FDKDecorationItemResourceTypeDefault;
 FOUNDATION_EXPORT NSString * const FDKDecorationItemResourceTypeAudioVisualizer;
@@ -119,8 +118,6 @@ FOUNDATION_EXPORT NSString * const FDKDecorationItemResourceTypeAudioVisualizer;
 
 @property (nonatomic) BOOL clearsBodyArea;
 
-@property (nonatomic) BOOL useFacialSegmentationData;
-
 @property (nonatomic,copy) NSArray<NSNumber*> *strokeColor;
 
 @property (nonatomic) CGFloat strokeRadius;
@@ -160,7 +157,6 @@ FOUNDATION_EXPORT NSString * const FDKDecorationItemResourceTypeAudioVisualizer;
 
 @property (nonatomic, assign) BOOL pollTrigger;
 @property (nonatomic, assign) NSUInteger groupNum;
-@property (nonatomic, assign) BOOL soundNeedsPublish;
 
 - (instancetype)init NS_UNAVAILABLE;
 
