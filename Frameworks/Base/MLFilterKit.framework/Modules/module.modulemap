@@ -1,5 +1,5 @@
 framework module MLFilterKit {
-  umbrella header "MLFilterKit-umbrella.h"
+  umbrella header "MLFilterKit.h"
 
   export *
   module * { export * }
