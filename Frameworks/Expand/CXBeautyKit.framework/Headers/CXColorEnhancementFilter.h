@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CXAutoLevelInfo.h"
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 NS_ASSUME_NONNULL_BEGIN
 
 

@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FDKMUnaryFilterProtocol.h"
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 @class FDKFilterEffect;
 @interface FDKMEffectsFilter : NSObject<MTIUnaryFilter, FDKMUnaryFilterProtocol>
 @property (nonatomic) CGFloat intensity;

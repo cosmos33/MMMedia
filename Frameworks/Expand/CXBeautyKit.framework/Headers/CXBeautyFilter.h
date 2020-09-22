@@ -10,8 +10,8 @@
 #import "CXFilterInputType.h"
 #import "CXMPSGaussianBlurFallback.h"
 
-@import MomoCV;
-@import MetalPetal;
+#import <MomoCV/MomoCV.h>
+#import <MetalPetal/MetalPetal.h>
 
 @class CXAutoLevelInfo;
 

@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "FDKMUnaryFilterProtocol.h"
-@import MetalPetal;
-@import FaceDecorationKit;
+#import <MetalPetal/MetalPetal.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 
 @interface FDKMFacialMasksFilter : NSObject<MTIUnaryFilter, FDKMUnaryFilterProtocol>
 - (instancetype)initWithFacialMasks:(NSArray <FDKFacialMask *>*)masks;
