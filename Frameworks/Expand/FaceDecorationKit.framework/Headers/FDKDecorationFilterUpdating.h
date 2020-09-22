@@ -6,7 +6,7 @@
 //
 //
 
-@import AVFoundation;
+#import <AVFoundation/AVFoundation.h>
 #import "FDKProtocols.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy,nullable) NSArray<id<FDKFacialExpression>> * facialExpressions;
 
 @property (nonatomic,copy,nullable) id<FDKObjectFeature> objectFeature;
+
+@property (nonatomic,copy,nullable) id<FDKFacialSegmentationData> facialSegmentationData;
 
 @property (nonatomic,copy,nullable) id<FDKBodyFeature> bodyFeature;
 

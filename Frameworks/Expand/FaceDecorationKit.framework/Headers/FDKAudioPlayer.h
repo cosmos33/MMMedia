@@ -6,7 +6,7 @@
 //
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 #import "FDKAudioPlayerProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithAudioFileURL:(NSURL *)URL loopingEnabled:(BOOL)loopingEnabled;
 
+@property (nonatomic, copy, readonly) NSURL *audioURL;
 @end
 
 NS_ASSUME_NONNULL_END

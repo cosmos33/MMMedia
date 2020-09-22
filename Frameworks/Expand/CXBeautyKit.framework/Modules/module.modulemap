@@ -1,6 +1,0 @@
-framework module CXBeautyKit {
-  umbrella header "CXBeautyKit.h"
-
-  export *
-  module * { export * }
-}

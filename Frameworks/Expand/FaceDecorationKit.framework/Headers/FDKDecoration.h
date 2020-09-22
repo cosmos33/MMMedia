@@ -6,21 +6,12 @@
 //
 //
 
-@import Mantle;
+#import <UIKit/UIKit.h>
+#import <Mantle/Mantle.h>
 
 @class FDKDecorationItem,FDKFacialMask,FDKFacialDistortion,FDKBeautySettings,FDKTriggerTip,FDKFilterEffect,FDKBaseEffectItem;
 
-static CGRect FDKMakeRectWithAspectRatioFillRect(CGSize aspectRatio, CGRect boundingRect) {
-    CGFloat horizontalRatio = boundingRect.size.width / aspectRatio.width;
-    CGFloat verticalRatio = boundingRect.size.height / aspectRatio.height;
-    CGFloat ratio;
-    
-    ratio = MAX(horizontalRatio, verticalRatio);
-    
-    CGSize newSize = CGSizeMake(floor(aspectRatio.width * ratio), floor(aspectRatio.height * ratio));
-    CGRect rect = CGRectMake(boundingRect.origin.x + (boundingRect.size.width - newSize.width)/2, boundingRect.origin.y + (boundingRect.size.height - newSize.height)/2, newSize.width, newSize.height);
-    return rect;
-}
+FOUNDATION_EXPORT CGRect FDKMakeRectWithAspectRatioFillRect(CGSize aspectRatio, CGRect boundingRect);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -75,6 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSUInteger pollGroupNum;
 
 @property (nonatomic, readonly) FDKBeautySettings *originalBeautySetting;
+
+@property (nonatomic, assign) int triggeringMicEffect;
 
 @end
 
