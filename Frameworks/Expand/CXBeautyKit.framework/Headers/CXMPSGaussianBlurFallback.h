@@ -4,7 +4,7 @@
 //
 //  Created by Yu Ao on 14/03/2018.
 //
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

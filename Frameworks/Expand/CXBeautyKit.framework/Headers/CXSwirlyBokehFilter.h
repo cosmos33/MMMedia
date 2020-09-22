@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CXSwirlyBokehFilter : NSObject<MTIUnaryFilter>

@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 
 #import "FDKMDecorationItemSource.h"
-@import MetalPetal;
-@import FaceDecorationKit;
+#import <MetalPetal/MetalPetal.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 @interface FDKMDecorationItemInfo: NSObject
 
 @property (nonatomic, assign) BOOL showing;

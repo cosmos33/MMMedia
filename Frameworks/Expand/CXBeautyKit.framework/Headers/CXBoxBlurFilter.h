@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 
 //radius 9
 @interface CXBoxBlurFilter : NSObject <MTIUnaryFilter>

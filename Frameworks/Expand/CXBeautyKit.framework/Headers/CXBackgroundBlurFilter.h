@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 #import "CXFilterInputType.h"
 @class MMImageSegmentationResult;
 NS_ASSUME_NONNULL_BEGIN

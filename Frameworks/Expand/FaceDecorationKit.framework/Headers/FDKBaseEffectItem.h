@@ -5,7 +5,7 @@
 //  Created by sunfei on 2018/10/26.
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @class FDKBaseEffectItem;
@@ -62,5 +62,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int type;
 @end
 
+@interface FDKMotionCameraItem: NSObject<FDKSubeffectItem>
+
+@property (nonatomic, assign) float presetPushDuration;
+@property (nonatomic, assign) float presetPullDuration;
+@property (nonatomic, assign) float presetScale;
+@property (nonatomic, assign) NSInteger pushMotionInterval;
+@property (nonatomic, assign) NSInteger pushMotionTime;
+@property (nonatomic, assign) NSInteger trackMotionMaxTimesPer3Seconds;
+@property (nonatomic, assign) NSInteger trackMotionMaxOperationTime;
+@property (nonatomic, assign) NSInteger trackMotionCoolDownTime;
+@end
 
 NS_ASSUME_NONNULL_END

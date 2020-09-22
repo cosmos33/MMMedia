@@ -1,5 +1,5 @@
 framework module FaceDecorationKitMetalPetal {
-  umbrella header "FaceDecorationKit+MetalPetal-umbrella.h"
+  umbrella header "FaceDecorationKitMetalPetal.h"
 
   export *
   module * { export * }

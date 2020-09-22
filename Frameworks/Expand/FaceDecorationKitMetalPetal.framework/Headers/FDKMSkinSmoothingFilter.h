@@ -12,8 +12,9 @@ typedef NS_ENUM(int, FDKMSkinSmoothingVersion) {
     FDKMSkinSmoothingVersion3
 };
 #import "FDKMUnaryFilterProtocol.h"
+#import <MetalPetal/MetalPetal.h>
+
 NS_ASSUME_NONNULL_BEGIN
-@import MetalPetal;
 
 @interface FDKMSkinSmoothingFilter : NSObject <MTIUnaryFilter, FDKMUnaryFilterProtocol>
 

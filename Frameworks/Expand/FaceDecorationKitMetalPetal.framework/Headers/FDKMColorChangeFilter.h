@@ -5,8 +5,8 @@
 //  Created by 杨乃川 on 2018/10/27.
 //
 
-@import FaceDecorationKit;
-@import MetalPetal;
+#import <FaceDecorationKit/FaceDecorationKit.h>
+#import <MetalPetal/MetalPetal.h>
 
 #import "FDKMUnaryFilterProtocol.h"
 @interface FDKMColorChangeFilter : MTIUnaryImageRenderingFilter<FDKMUnaryFilterProtocol>

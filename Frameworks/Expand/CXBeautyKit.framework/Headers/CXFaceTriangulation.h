@@ -8,9 +8,10 @@
 #import <Foundation/Foundation.h>
 #import "CXTextureCoordinates.h"
 
-@import MomoCV;
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 
+
+#import <MomoCV/MomoCV.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CXFaceTriangulation : NSObject

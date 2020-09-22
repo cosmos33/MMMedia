@@ -1,5 +1,5 @@
 framework module CXBeautyKit {
-  umbrella header "CXBeautyKit-umbrella.h"
+  umbrella header "CXBeautyKit.h"
 
   export *
   module * { export * }

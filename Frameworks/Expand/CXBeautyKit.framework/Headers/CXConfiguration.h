@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CXConfiguration : NSObject
 @property (nonatomic, copy, class) NSString *metalLibraryName;
+@property (nonatomic, readonly, class) NSBundle *libraryBundle;
+@property (nonatomic, readonly, class) NSURL *libraryURL;
 @end
-FOUNDATION_EXPORT NSURL * _Nullable CXMetalLibraryURLForBundle(NSBundle *bundle);
+
 NS_ASSUME_NONNULL_END

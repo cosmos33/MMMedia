@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CXShaderTypes.h"
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
