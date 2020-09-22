@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "CXSkinSmoothingSettings.h"
 #import "CXFilterInputType.h"
-@import MomoCV;
-@import MetalPetal;
+#import <MomoCV/MomoCV.h>
+#import <MetalPetal/MetalPetal.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

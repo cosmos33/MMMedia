@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "FDKMUnaryFilterProtocol.h"
-@import MetalPetal;
-@import FaceDecorationKit;
+#import <MetalPetal/MetalPetal.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 @interface FDKMEffectItemsFilter : NSObject<MTIUnaryFilter, FDKMUnaryFilterProtocol>
 - (instancetype)initWithEffectItems:(NSArray <FDKBaseEffectItem *> *)items NS_DESIGNATED_INITIALIZER;
 - (void)updateWithRequest:(FDKDecorationFilterUpdateRequest *)request;

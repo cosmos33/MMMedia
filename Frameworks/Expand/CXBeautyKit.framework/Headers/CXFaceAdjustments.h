@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "CXMakeup.h"
-@import Mantle;
-@import MomoCV;
+#import <Mantle/Mantle.h>
+#import <MomoCV/MomoCV.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

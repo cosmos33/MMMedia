@@ -5,7 +5,7 @@
 //  Created by Yu Ao on 06/03/2018.
 //
 
-@import MomoCV;
+#import <MomoCV/MomoCV.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

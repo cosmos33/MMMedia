@@ -6,8 +6,8 @@
 //
 //
 
-@import Mantle;
-@import MLFilterKit;
+#import <Mantle/Mantle.h>
+#import <MLFilterKit/MLFilterKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

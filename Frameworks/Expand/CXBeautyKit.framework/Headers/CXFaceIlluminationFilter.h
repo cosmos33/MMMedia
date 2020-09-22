@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@import MetalPetal;
-@import MomoCV;
+#import <MetalPetal/MetalPetal.h>
+#import <MomoCV/MomoCV.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

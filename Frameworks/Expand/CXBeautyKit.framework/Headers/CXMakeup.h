@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import Mantle;
+#import <Mantle/Mantle.h>
 
 typedef NSString *CXMakeupLayerType NS_EXTENSIBLE_STRING_ENUM;
 
