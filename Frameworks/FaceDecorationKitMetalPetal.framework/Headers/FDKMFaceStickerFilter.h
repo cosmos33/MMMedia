@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "FDKMUnaryFilterProtocol.h"
-@import MetalPetal;
-@import FaceDecorationKit;
+#import <MetalPetal/MetalPetal.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface FDKMFaceStickerFilter : NSObject<MTIUnaryFilter, FDKMUnaryFilterProtocol>
 @property (nonatomic, assign) NSInteger preferredFrameRate;
