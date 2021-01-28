@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MetalPetal/MetalPetal.h>
-#import <FaceDecorationKit/FaceDecorationKit.h>
+@import MetalPetal;
+@import FaceDecorationKit;
 
 NS_ASSUME_NONNULL_BEGIN
 

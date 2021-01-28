@@ -5,7 +5,7 @@
 //  Created by Jackie on 2017/11/24.
 //
 
-#import <MetalPetal/MetalPetal.h>
+@import MetalPetal;
 
 @interface FDKMFacialMaskFilter : NSObject <MTIFilter>
 

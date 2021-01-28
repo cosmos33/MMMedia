@@ -6,7 +6,7 @@
 //
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 #import "MLMediaMetadataItem.h"
 
 NS_ASSUME_NONNULL_BEGIN

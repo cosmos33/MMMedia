@@ -5,7 +5,7 @@
 //  Created by yi chen on 2017/11/22.
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 #import "MLMediaMetadataItem.h"
 #import "MLMediaMetadataTrack.h"
 #import "MLMetadataTrackEffect.h"

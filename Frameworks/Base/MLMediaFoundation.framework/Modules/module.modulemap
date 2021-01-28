@@ -1,5 +1,5 @@
 framework module MLMediaFoundation {
-  umbrella header "MLMediaFoundation-umbrella.h"
+  umbrella header "MLMediaFoundation.h"
 
   export *
   module * { export * }

@@ -7,8 +7,8 @@
 //
 
 @import UIKit;
-@import MLMediaFoundation;
-@import GPUImage;
+#import <MLMediaFoundation/MLMediaFoundation.h>
+#import <GPUImage/GPUImage.h>
 
 @interface MLGPUImagePixelBufferDisplayView : UIView <MLPixelBufferDisplay>
 

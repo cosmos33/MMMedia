@@ -18,6 +18,7 @@ FOUNDATION_EXPORT const float FDKBeautySettingInvalidValue;
 @property (nonatomic) float thinFaceFactor;
 @property (nonatomic) float skinSmoothingFactor;
 @property (nonatomic) float skinWhitenFactor;
+@property (nonatomic) float skinRuddyFactor;
 
 //瘦身美腿相关
 @property (nonatomic) float bodyWidthFactor;

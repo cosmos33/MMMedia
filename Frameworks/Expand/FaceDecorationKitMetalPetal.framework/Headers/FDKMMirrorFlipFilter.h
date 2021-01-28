@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "FDKMUnaryFilterProtocol.h"
-#import <FaceDecorationKit/FaceDecorationKit.h>
-#import <MetalPetal/MetalPetal.h>
+@import FaceDecorationKit;
+@import MetalPetal;
 @interface FDKMMirrorFlipFilter : MTIUnaryImageRenderingFilter<FDKMUnaryFilterProtocol>
 - (instancetype)initWithEffectItem:(FDKMirrorFlipEffectItem *)item;
 @end

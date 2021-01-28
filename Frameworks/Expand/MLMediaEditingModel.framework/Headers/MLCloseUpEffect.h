@@ -5,9 +5,9 @@
 //  Created by YuAo on 17/08/2017.
 //
 //
-@import Mantle;
-@import MLFilterKit;
-@import FaceDecorationKit;
+#import <Mantle/Mantle.h>
+#import <MLFilterKit/MLFilterKit.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

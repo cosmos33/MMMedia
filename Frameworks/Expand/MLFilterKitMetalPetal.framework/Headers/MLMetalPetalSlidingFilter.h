@@ -5,7 +5,7 @@
 //  Created by Yu Ao on 30/11/2017.
 //
 
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 
 typedef NS_ENUM(NSUInteger, MLMetalPetalSlidingFilterMode) {
     MLMetalPetalSlidingFilterModeHorizontal,

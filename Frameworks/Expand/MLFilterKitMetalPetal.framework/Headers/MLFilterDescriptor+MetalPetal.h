@@ -5,8 +5,8 @@
 //  Created by 杨乃川 on 2017/11/9.
 //
 
-@import MLFilterKit;
-@import MetalPetal;
+#import <MLFilterKit/MLFilterKit.h>
+#import <MetalPetal/MetalPetal.h>
 
 @protocol MLFKPresetFilter <MTIUnaryFilter>
 

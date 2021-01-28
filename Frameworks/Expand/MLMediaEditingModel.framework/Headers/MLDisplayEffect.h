@@ -6,7 +6,7 @@
 //
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 
 FOUNDATION_EXPORT double const kDefaultMLDisplayEffectBrightness;
 FOUNDATION_EXPORT double const kDefaultMLDisplayEffectSaturation;

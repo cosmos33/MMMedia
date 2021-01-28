@@ -1,5 +1,5 @@
 framework module MLMediaEditingModel {
-  umbrella header "MLMediaEditingModel-umbrella.h"
+  umbrella header "MLMediaEditingModel.h"
 
   export *
   module * { export * }

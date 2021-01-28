@@ -6,9 +6,9 @@
 //
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 @import AVFoundation;
-@import MLFilterKit;
+#import <MLFilterKit/MLFilterKit.h>
 #import "MLTimeRangeEffect.h"
 #import "MLMediaSerializable.h"
 

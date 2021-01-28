@@ -33,7 +33,6 @@
 #import "FDKMSkinWhitenFilter.h"
 #import "FDKMStrokeFilter.h"
 #import "FDKMUnaryFilterProtocol.h"
-#import "FDKVideoVFXFilter.h"
 
 FOUNDATION_EXPORT double FaceDecorationKitMetalPetalVersionNumber;
 FOUNDATION_EXPORT const unsigned char FaceDecorationKitMetalPetalVersionString[];

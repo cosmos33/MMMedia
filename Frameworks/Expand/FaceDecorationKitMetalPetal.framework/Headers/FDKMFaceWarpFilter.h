@@ -7,7 +7,7 @@
 
 #import "FDKMUnaryFilterProtocol.h"
 
-#import <MetalPetal/MetalPetal.h>
+@import MetalPetal;
 
 
 @interface FDKMFaceWarpFilter : NSObject <MTIUnaryFilter, FDKMUnaryFilterProtocol>

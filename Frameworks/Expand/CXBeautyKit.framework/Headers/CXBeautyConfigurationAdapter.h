@@ -29,7 +29,7 @@ FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsLipThicknessKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsFaceWidthKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsEyeDistanceKey;
 FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsEyeHeightKey;// [-1, 1]
-FOUNDATION_EXPORT CXFaceAdjustmentsKey CXFaceAdjustmentsShortenFaceKey;
+FOUNDATION_EXTERN CXFaceAdjustmentsKey CXFaceAdjustmentsFaceShortenKey;
 
 
 typedef NSString *const CXMakeupType NS_STRING_ENUM;
@@ -51,6 +51,11 @@ typedef NS_OPTIONS(NSUInteger, CXBeautyOption){
     CXBeautyOptionBackgroundBlur = 1 << 4,
     CXBeautyOptionColorEnhance = 1 << 5,
     CXBeautyOptionAll = NSUIntegerMax,
+};
+
+typedef NS_ENUM(NSInteger, CXSkinWithenVersion)  {
+    CXSkinWithenVersion1 = 0,
+    CXSkinWithenVersion2 = 1
 };
 
 @interface CXDetectionResults : NSObject
@@ -127,14 +132,18 @@ typedef NS_OPTIONS(NSUInteger, CXBeautyOption){
 - (void)smoothSkin:(float)amount;
 - (void)smoothSkinCorrection:(BOOL)correctionEnbale;
 
-- (void)adjustNasolabialFoldsArea:(float)amount;
-- (void)adjustEyesArea:(float)amount;
-
+// whiten
+- (void)setWhitenVersion:(CXSkinWithenVersion)whitenVersion; // default is CXSkinWithenVersion1,
 - (void)whitenSkin:(float)amount;
+- (void)rosySkin:(float)amount; // only available for CXSkinWithenVersion2
 
 - (void)whitenTeeth:(float)amount;
 
 - (void)faceIllumination:(float)amount;
+
+- (void)adjustNasolabialFoldsArea:(float)amount;
+- (void)adjustEyesArea:(float)amount;
+
 @end
 
 @interface CXBeautyConfigurationAdapter (ColorEnhance)

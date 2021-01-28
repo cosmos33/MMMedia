@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 #import "MLMediaMetadataItem.h"
 #import "MLMediaMetadataTrack.h"
 #import "MLMetadataTrackEffect.h"

@@ -6,7 +6,7 @@
 //
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 typedef NS_ENUM(NSInteger, MLGPUImageAspectScaleMode) {
     MLGPUImageAspectScaleModeFit,

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMMedia'
-  s.version          = '2.1.2'
+  s.version          = '2.3.5'
   s.summary          = 'MMMedia'
 
   s.description      = <<-DESC
@@ -39,11 +39,11 @@ Pod::Spec.new do |s|
     sp.vendored_frameworks = 'Frameworks/Expand/*.framework'
     sp.resources = 'Resources/*'
     sp.dependency 'MMCV'
-    sp.dependency 'MMXEScene'
+    sp.dependency 'MMXEngine'
     sp.dependency 'Mantle'
   end
 
   s.dependency 'GPUImage'
-  s.dependency 'MetalPetal', '1.1.2'
+  s.dependency 'MetalPetal/Static', '~>1.13.0'
 
 end

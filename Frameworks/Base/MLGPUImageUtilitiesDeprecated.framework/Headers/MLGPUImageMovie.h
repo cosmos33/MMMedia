@@ -6,9 +6,9 @@
 //  Copyright © 2016 wemomo.com. All rights reserved.
 //  Deprecated
 
-@import GPUImage;
-@import MLGPUImageCVPixelBufferIO;
-@import MLMediaFoundation;
+#import <GPUImage/GPUImage.h>
+#import <MLGPUImageCVPixelBufferIO/MLGPUImageCVPixelBufferIO.h>
+#import <MLMediaFoundation/MLMediaFoundation.h>
 
 @class MLGPUImageMovie;
 

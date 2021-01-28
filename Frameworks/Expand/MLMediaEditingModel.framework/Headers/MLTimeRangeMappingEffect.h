@@ -6,7 +6,7 @@
 //
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 @import AVFoundation;
 #import "MLTimeRangeEffect.h"
 #import "MLMediaSerializable.h"

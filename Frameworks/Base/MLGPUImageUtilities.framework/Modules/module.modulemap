@@ -1,5 +1,5 @@
 framework module MLGPUImageUtilities {
-  umbrella header "MLGPUImageUtilities-umbrella.h"
+  umbrella header "MLGPUImageUtilities.h"
 
   export *
   module * { export * }

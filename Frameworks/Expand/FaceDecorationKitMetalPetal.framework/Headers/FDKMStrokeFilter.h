@@ -7,7 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import <MetalPetal/MetalPetal.h>
+@import MetalPetal;
 
 NS_ASSUME_NONNULL_BEGIN
 

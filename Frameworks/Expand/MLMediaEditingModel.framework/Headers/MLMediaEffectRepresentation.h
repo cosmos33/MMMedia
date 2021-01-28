@@ -6,7 +6,7 @@
 //
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 #import "MLMediaSerializable.h"
 
 NS_ASSUME_NONNULL_BEGIN

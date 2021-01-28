@@ -5,7 +5,7 @@
 //  Created by YuAo on 12/09/2017.
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 @interface GPUImageOutput (MLExtensions)
 

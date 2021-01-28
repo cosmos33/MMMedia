@@ -6,7 +6,7 @@
 //
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 @import CoreImage;
 
 NS_ASSUME_NONNULL_BEGIN

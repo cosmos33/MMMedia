@@ -6,7 +6,7 @@
 //
 //
 
-@import Mantle;
+#import <Mantle/Mantle.h>
 @import CoreLocation;
 #import "MLMediaMetadataItem.h"
 #import "MLMediaMetadataTrack.h"
