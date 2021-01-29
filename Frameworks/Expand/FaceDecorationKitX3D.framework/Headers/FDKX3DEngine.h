@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
+#if __has_include("XSKScriptBridge.h")
+#import "XSKScriptBridge.h"
+#else
+#import <XESceneKit/XSKScriptBridge.h>
+#endif
 
 typedef void(^FDKX3DMessageSendHandle)(NSString* message);
 
@@ -24,6 +29,17 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 @protocol FDKFacialExpression;
 @protocol FDKObjectFeature;
 @protocol CVSegmentationData;
+@protocol CVFaceSegmentationData;
+
+@interface FDKX3DfaceSegmentInfo : NSObject <CVFaceSegmentationData>
+
+@property (nonatomic, copy) NSData *faceData;
+@property (nonatomic, copy) NSData *faceMaskData;
+@property (nonatomic) size_t faceDataChannelNum;
+@property (nonatomic) size_t faceWidth;
+@property (nonatomic) size_t faceHeight;
+
+@end
 
 @interface FDKX3DCVInfo : NSObject
 
@@ -39,6 +55,8 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 @property (nonatomic,strong) NSArray<MMHandFeature *> *handFeatures;
 
 @property (nonatomic,strong) id<CVSegmentationData> bodySegmentationData;
+
+@property (nonatomic,strong) id<CVFaceSegmentationData> faceSegmentationData;
 
 @property (nonatomic,copy) NSData *sourceVerticesData;
 
@@ -77,12 +95,6 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 - (void)updateWithCVInfos:(FDKX3DCVInfo *)CVInfos;
 
 /**
- Weex Message 事件派发
- */
-- (void)dispatchReceivedMessage:(NSString*)message;
-- (void)registerMessageSendHandle:(FDKX3DMessageSendHandle)sendHandle;
-
-/**
  Lua 模块加载接口
  */
 - (void)setupLuaScriptEngine;
@@ -107,9 +119,22 @@ typedef NS_ENUM(NSInteger, FDKX3DCameraPosition) {
 
 - (void)appendSyncTask:(dispatch_block_t)syncTask;
 
+- (id<XSKScriptBridge>)scriptBridge;
+
 /**
  自定义事件派发
  */
 - (void)dispatchEvent:(NSString *)event content:(NSString *)content;
+
+@end
+
+@interface FDKX3DEngine (DEPRECATED)
+
+- (void)dispatchReceivedMessage:(NSString*)message NS_DEPRECATED_IOS(9.0, 11.0, "this function is being deprecated.");
+- (void)registerMessageSendHandle:(FDKX3DMessageSendHandle)sendHandle NS_DEPRECATED_IOS(9.0, 11.0, "this function is being deprecated.");
+
+- (void)regist:(id)handler forHandler:(NSString *)handlerName NS_DEPRECATED_IOS(9.0, 11.0, "this function is being deprecated. replace with -[FDKX3DEngine scriptBridge]");
+- (void)unregist:(NSString *)handlerName NS_DEPRECATED_IOS(9.0, 11.0, "this function is being deprecated. replace with -[FDKX3DEngine scriptBridge]");
+- (void)unregistAll NS_DEPRECATED_IOS(9.0, 11.0, "this function is being deprecated. replace with -[FDKX3DEngine scriptBridge]");
 
 @end

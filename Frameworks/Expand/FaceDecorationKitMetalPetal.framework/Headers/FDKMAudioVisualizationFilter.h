@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import "FDKMUnaryFilterProtocol.h"
-@import MetalPetal;
+#import <MetalPetal/MetalPetal.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDKMAudioVisualizationFilter : MTIUnaryImageRenderingFilter<FDKMUnaryFilterProtocol>

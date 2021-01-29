@@ -6,7 +6,7 @@
 //
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 //overlay at texture 0
 //alphaMask at texture 1

@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@import GPUImage;
-@import FaceDecorationKit;
+#import <GPUImage/GPUImage.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 @interface FDKBigMouthFilter : GPUImageFilter <FDKDecorationFilterUpdating>
 
 @end

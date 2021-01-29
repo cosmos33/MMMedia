@@ -5,8 +5,8 @@
 //  Created by YuAo on 1/4/17.
 //
 //
-@import GPUImage;
-@import MLFilterKit;
+#import <GPUImage/GPUImage.h>
+#import <MLFilterKit/MLFilterKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

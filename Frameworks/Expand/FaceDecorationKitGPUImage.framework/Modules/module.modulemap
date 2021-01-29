@@ -1,5 +1,5 @@
 framework module FaceDecorationKitGPUImage {
-  umbrella header "FaceDecorationKit+GPUImage-umbrella.h"
+  umbrella header "FaceDecorationKitGPUImage.h"
 
   export *
   module * { export * }

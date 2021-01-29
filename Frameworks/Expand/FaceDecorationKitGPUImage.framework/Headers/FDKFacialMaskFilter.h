@@ -6,7 +6,7 @@
 //
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 @protocol FDKFaceFeature;
 
@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-@import FaceDecorationKit;
+#import <FaceDecorationKit/FaceDecorationKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

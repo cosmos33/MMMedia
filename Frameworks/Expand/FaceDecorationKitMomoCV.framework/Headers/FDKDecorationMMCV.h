@@ -6,8 +6,8 @@
 //  Copyright © 2016 Momo. All rights reserved.
 //
 
-@import FaceDecorationKit;
-@import MomoCV;
+#import <FaceDecorationKit/FaceDecorationKit.h>
+#import <MomoCV/MomoCV.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

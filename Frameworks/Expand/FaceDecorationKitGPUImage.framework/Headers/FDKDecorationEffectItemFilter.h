@@ -5,8 +5,8 @@
 //  Created by sunfei on 2018/10/26.
 //
 
-@import GPUImage;
-@import FaceDecorationKit;
+#import <GPUImage/GPUImage.h>
+#import <FaceDecorationKit/FaceDecorationKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

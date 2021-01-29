@@ -6,7 +6,7 @@
 //
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 //original image at index 0
 //sobelFilter at index 1

@@ -6,7 +6,7 @@
 //
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 @interface MLGPUImageBlurBlendFilter : GPUImageFilterGroup
 

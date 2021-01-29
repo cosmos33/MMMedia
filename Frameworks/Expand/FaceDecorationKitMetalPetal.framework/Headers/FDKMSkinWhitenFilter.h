@@ -9,10 +9,9 @@ typedef NS_ENUM(int, FDKMSkinWhitenVersion) {
     FDKMSkinWhitenVersion1
 };
 #import "FDKMUnaryFilterProtocol.h"
+#import <MetalPetal/MetalPetal.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-@import MetalPetal;
 
 @interface FDKMSkinWhitenFilter : MTIUnaryImageRenderingFilter<FDKMUnaryFilterProtocol>
 

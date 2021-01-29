@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Momo. All rights reserved.
 //
 
-@import GPUImage;
+#import <GPUImage/GPUImage.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
