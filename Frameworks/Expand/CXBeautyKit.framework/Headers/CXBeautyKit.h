@@ -29,3 +29,4 @@
 #import "CXFaceAdjustmentFilter.h"
 #import "CXFaceGeometry.h"
 #import "CXShaderTypes.h"
+#import "CXWhitenFilter.h"

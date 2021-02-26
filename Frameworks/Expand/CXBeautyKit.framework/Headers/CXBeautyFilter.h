@@ -88,9 +88,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) float smoothingAmountForInputWithoutFaces;
 
+// 为了兼容 MOMO
+@property (nonatomic) float skinSmoothingFactorWithoutFaces;
+// 为了兼容
+
 @property (nonatomic, strong, nullable) MTIContext *context;
 
 @property (nonatomic, assign) BOOL disable;
+
+@property (nonatomic, assign) BOOL enable;
 
 + (Class<CXMPSGaussianBlurFallback>)MPSGaussianBlurFallback;
 

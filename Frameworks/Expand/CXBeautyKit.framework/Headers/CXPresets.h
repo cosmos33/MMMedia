@@ -13,6 +13,8 @@ FOUNDATION_EXPORT  NSBundle * CXPresetFiltersBundle(void);
 
 FOUNDATION_EXPORT  NSBundle * CXPresetMakeupsBundle(void);
 
+FOUNDATION_EXPORT NSBundle * CXPresetEffectsBundle(void);
+
 FOUNDATION_EXPORT void CXOverrideCustomMakeupBundle(void);
 FOUNDATION_EXPORT void CXOverrideCustomFilterBundle(void);
 
